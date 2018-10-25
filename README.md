@@ -4,5 +4,5 @@ JavaBeans is an educational mobile-app that covers the object-oriented principle
 It covers 4 modules - Abstraction, Polymorphism, Inheritance and Encapsulation and has three components within each module, concepts and definitions, a true/false quiz and a multiple choice quiz. By providing the correct answers, users can collect beans throughout the game.
 In addition, users can choose to explore the OOP Playlist containing videos relating to OOP principles in the learning modules page.
 
-*When running the application, you may need to 'Clean' and 'Rebuild' the project.
+*When running the application, if you come across any problems such as 'Application Failed', you may need to 'Clean' and 'Rebuild' the project.
 
