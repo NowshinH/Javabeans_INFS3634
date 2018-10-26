@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TutorialActivity">
+
+    <TextView
+        android:id="@+id/moduleView"
+        android:layout_width="221dp"
+        android:layout_height="87dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="#ff524336"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/conceptBut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <Button
+        android:id="@+id/conceptBut"
+        android:layout_width="311dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#ff524336"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Concepts and Definitions"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tfBut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/mcqBut"
+        android:layout_width="233dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#ff524336"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Multiple Choice"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/backBut"
+        app:layout_constraintEnd_toStartOf="@+id/mcqInfo"
+        app:layout_constraintHorizontal_bias="0.743"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/tfBut"
+        android:layout_width="234dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#ff524336"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="True or False"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mcqBut"
+        app:layout_constraintEnd_toStartOf="@+id/tfInfo"
+        app:layout_constraintHorizontal_bias="0.763"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="83dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/conceptBut"
+        app:layout_constraintEnd_toStartOf="@+id/moduleView"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685"
+        app:srcCompat="@drawable/logosmall" />
+
+
+    <ImageButton
+        android:id="@+id/tfInfo"
+        android:layout_width="64dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="20dp"
+        android:background="#373636"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conceptBut"
+        app:srcCompat="@android:drawable/ic_menu_help" />
+
+    <ImageButton
+        android:id="@+id/mcqInfo"
+        android:layout_width="64dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        android:background="#373636"
+        app:layout_constraintBottom_toTopOf="@+id/backBut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tfBut"
+        app:layout_constraintVertical_bias="0.275"
+        app:srcCompat="@android:drawable/ic_menu_help" />
+
+    <ImageButton
+        android:id="@+id/backBut"
+        android:layout_width="93dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#373636"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_media_previous" />
+
+
+</android.support.constraint.ConstraintLayout>

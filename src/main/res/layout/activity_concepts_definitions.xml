@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ConceptsDefinitions">
+
+    <LinearLayout
+        android:id="@+id/cd"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+
+        //ABSTRACTION CONCEPTS AND DEFINITIONS
+    <LinearLayout
+        android:id="@+id/acd"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="12dp"
+        android:background="@drawable/tfbg"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/abstraction"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif"
+            android:text="Abstraction"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/acd1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/abstraction_cd1" />
+
+        <TextView
+            android:id="@+id/abstractclasses"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/abstraction_h1"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/acd2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/abstraction_cd2"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/abstractmethods"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/abstraction_h2"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/acd3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/abstraction_cd3"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+        //POLYMORPHISM CONCEPTS AND DEFINITIONS
+        <LinearLayout
+            android:id="@+id/pcd"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dp"
+            android:background="@drawable/tfbg"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/polymorphism"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="Polymorphism"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pcd1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/polymorphism_cd1"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                app:srcCompat="@drawable/animal" />
+
+            <TextView
+                android:id="@+id/horse"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/horse"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                app:srcCompat="@drawable/horse" />
+
+            <TextView
+                android:id="@+id/pcd2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/polymorphism_cd2"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="333dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/neigh" />
+
+            <TextView
+                android:id="@+id/pcd3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/polymorphism_cd3"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        //INHERITANCE CONCEPTS AND DEFINITIONS
+        <LinearLayout
+            android:id="@+id/icd"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dp"
+            android:background="@drawable/tfbg"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/inheritance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="Inheritance"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/icd1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/inheritance_cd1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/constructors"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="          Are superclass constructors inherited?"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/icd2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/inheritance_cd2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/superkeyword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="Using the super keyword"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/icd3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/inheritance_cd3"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/important"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="Important Points To Remember About Inheritance"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/icd4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/inheritance_cd4"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="408dp"
+                app:srcCompat="@drawable/overriding" />
+
+            <TextView
+                android:id="@+id/output"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="Output:"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                app:srcCompat="@drawable/overridingoutput" />
+
+            <TextView
+                android:id="@+id/icd5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/inheritance_cd5"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        //ENCAPSULATION CONCEPTS AND DEFINITIONS
+        <LinearLayout
+            android:id="@+id/ecd"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dp"
+            android:background="@drawable/tfbg"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/encapsulation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="Encapsulation"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ecd1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/encapsulation_cd1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/whyencap"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="Why Encapsulation?"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ecd2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/encapsulation_cd2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/eimportant"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="Important Points to Remember About Encapsulation"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ecd3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/encapsulation_cd3"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/datafieldencapsulation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="Data Field Encapsulation"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ecd4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/encapsulation_cd4"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/modifiers"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="Visibility/Access Modifiers"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ecd5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/encapsulation_cd5"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

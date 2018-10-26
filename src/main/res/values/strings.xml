@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">Javabeans</string>
+
+    //-------------------------------------------------------------Abstraction Concepts and Definitions---------------------------------------------------------------------------//
+
+    <string name="abstraction_cd1">In Object-Oriented Programming, abstraction is the process of hiding the implementation details from the user, such that only functionality will provided to the user. That is, the user will only understand what the object does and not how it does it.\n\n
+    For example, when you login to your eBay account online, you enter your user_ID and password and click login, what happens when you click login, how the input data is sent to the eBay server and how it gets verified is abstracted from the you.\n\n
+    In Java, abstraction is achieved using abstract classes and interfaces.
+    </string>
+    <string name="abstraction_h1">Abstract Classes</string>
+    <string name="abstraction_cd2">An abstract class is one that contains the abstract keyword in its declaration, as shown below.\n\n
+    \t\t\t \t\t public abstract class ClassName{ } \n\n
+        &#8226; An abstract class cannot be instantiated.\n\n
+        &#8226; Abstract classes may or may not contain abstract methods however if a class has at least one abstract method, it must be declared as an abstract class.\n\n
+        &#8226; If you inherit an abstract class, you have to provide implementations to all the abstract methods in it.\n
+    </string>
+    <string name="abstraction_h2">Abstract Methods</string>
+    <string name="abstraction_cd3">An abstract method is a method without a body, i.e. no implementation. \n\n
+        Example: public abstract int myMethod(int n1, int n2); \n\n
+        &#8226; An abstract method contains a method signature, but no method body.\n\n
+        &#8226; If a class has an abstract method, it should be declared abstract however an abstract class does not need to have an abstract method. \n\n
+        &#8226; If a regular class extends an abstract class, then the class must have to implement all of the abstract methods of the abstract parent class or it has to be declared abstract as well.\n\n
+        &#8226; Instead of the curly braces, an abstract method will have a semi-colon(;) at the end. \n
+    </string>
+
+    //Source: https://beginnersbook.com/2014/01/abstract-method-with-examples-in-java/
+    //Source: https://www.tutorialspoint.com/java/java_abstraction.htm
+
+
+    //-------------------------------------------------------------Polymorphism Concepts and Definitions---------------------------------------------------------------------------//
+
+    <string name="polymorphism_cd1">In Object-Oriented Programming, polymorphism is the ability for the same code to be used with different types of objects and behave differently with each object. This is commonly used when a parent class is used to refer to a child class object. \n\n
+        Polymorphism allows you to define one interface and have multiple implementations.\n\n
+         &#8226; As an instance of a subclass is always an instance of its superclass, we can handle subclass objects as if they were superclass objects.\n\n
+         &#8226; As a superclass guarantees certain operations in its subclasses, we can invoke those operations without caring which subclass the actual object is an instance of.\n\nConsider the analogy of fruit, apple and orange with the Fruit class as the superclass for Apple and Orange. An apple is fruit, so you can always safely assign an instance of Apple to a variable for Fruit.\n\nPolymorphism allows methods to be used generically for a wide range of object arguments. This is known as generic programming.\n\nNow let’s take a look at the example below.\n\nAnimal Class:
+    </string>
+    <string name="horse">Horse Class:</string>
+    <string name="polymorphism_cd2">In this example, we have the Animal class which has one subclass, Horse. In the Animal class, the sound() method is used to print “Animal is making sound” however when this method is called in the Horse class, it prints “Neigh”. This demonstrates polymorphism, in that it allows the same action (sound() method) to be implemented or performed in different ways.\n\nOutput:
+    </string>
+
+    <string name="polymorphism_cd3">It is important to note however that when a Horse object is passed into the sound() method, the particular implementation of the object that is invoked is determined dynamically at runtime.\n</string>
+
+    //Source: https://www.tutorialspoint.com/java/java_polymorphism.htm
+    //Source: https://beginnersbook.com/2013/03/polymorphism-in-java/
+    //Source: https://www.guru99.com/java-inheritance-polymorphism.html
+    //Source: https://www.javatpoint.com/runtime-polymorphism-in-java
+
+
+    //-------------------------------------------------------------Inheritance Concepts and Definitions---------------------------------------------------------------------------//
+
+    <string name="inheritance_cd1">In Object-Oriented Programming, inheritance is the mechanism by which one class is allowed to inherit all of the properties and behaviours of its parent class.\n\nSome of the key terms and definitions in inheritance are outlined below.\n\n
+         &#8226; Subclass: A class that is derived from another class is called a subclass.\n\n
+         &#8226; Superclass: A class from which the subclass is derived is called the superclass.\n\n
+         &#8226; Constructor: A special method that is called when an object is instantiated.\n\nTo inherit a class, we use the extends keyword. The following notation is used to create a subclass that inherits the properties and behaviours of its superclass.\n\n
+        \t\t\tpublic class Subclass extends Superclass{ }
+    </string>
+    <string name="inheritance_cd2">No. Constructors are not inherited by subclasses, but the constructor of the superclass can be invoked from the subclass. They may be invoked implicitly (using the superclass no-arguments constructor) or explicitly (using the super() keyword).\n\n
+        &#8226; With super(), the superclass no-argument constructor is invoked. \n\n
+        &#8226; With super(parameter list), the superclass constructor with a matching parameter list is invoked.\n\n
+        If a constructor does not explicitly invoke a superclass constructor, the Java compiler automatically inserts a call to the no-args constructor of the superclass.
+    </string>
+
+    <string name="inheritance_cd3">The keyword, super can be used in two ways: \n\n
+    1. To invoke a superclass constructor\n\n
+    2. To invoke a superclass method \n\n
+        You must use the keyword super to call the superclass constructor. Invoking a superclass constructor’s name in a subclass causes a syntax/compiler error. The super must also appear first in the constructor of a subclass.
+    </string>
+    <string name="inheritance_cd4">
+        &#8226; A subclass inherits all the members from its superclass, including its fields, methods and nested classes.\n\n
+        &#8226; A superclass can have more than one subclass however a subclass can only have one superclass.\n\n
+        &#8226; Except for the Object class, every class has only one direct superclass. In the absence of any other explicit superclass, every class is implicitly a subclass of the Object class.\n\n
+        &#8226; A subclass does not inherit the private fields, methods or nested classes of its parent class. However if the superclass has public/protected getter and setter methods for accessing its private fields, these can be use used by the subclass.\n\nOne of the key benefits of inheritance in Java is that it allows for code reusability. When you want to create a new class and there is already a parent class that contains some of the code that you want to use, you can extend your new class from this existing parent class to inherit its properties and behaviours.\n\nAnother benefit of inheritance is that it can be used to achieve method overriding. When defining a subclass, you can add new properties, methods or override methods in its superclass. Method overriding allows a subclass to have the same method in its superclass, i.e. same method signature with a specific implementation of that method. When a method in a subclass has the same method signature as a method in its super-class, then the method in the subclass is said to override the method in the super-class.\n\n
+        Example: Method Overriding
+    </string>
+    <string name="inheritance_cd5">In this example, the disp() method in the superclass, ParentClass is overridden in its subclass, JavaExample. Thus when the disp() is invoked in the subclass, it prints “Child Method” not “Parent Method”.\n
+    </string>
+
+    //Source: https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html
+    //Source: https://www.geeksforgeeks.org/inheritance-in-java/
+    //Source: tutorials.jenkov.com/java/constructors.html
+    //Source: https://beginnersbook.com/2013/03/inheritance-in-java/
+
+
+    / //-------------------------------------------------------------Encapsulation Concepts and Definitions---------------------------------------------------------------------------//
+
+    <string name="encapsulation_cd1">In Object-Oriented Programming, encapsulation is the principle by which the details of implementation are encapsulated and hidden from the user. It simply means binding an object’s properties (fields) and behaviours (methods) together. If you create a class, this is known as encapsulation.</string>
+    <string name="encapsulation_cd2">Encapsulation ensures that all implementation details are hidden from the user. This ensures that the data is protected and makes the code, easier to maintain.\n\nConsider an item in your home, such as a television, that you use on a daily basis. The implementation of the TV was encapsulated. Most people don’t know all the components of items they use everyday, e.g. you may not know how light switches are wired together and how they work internally but you can switch lights on and off in your home.</string>
+    <string name="encapsulation_cd3">
+        &#8226; All users should know how to access encapsulated code (with reference to access modifiers - public, private, protected, default).\n\n
+         &#8226; In encapsulation, the data in a class is hidden from others. This is also known as data-hiding.\n\n
+         &#8226; Encapsulation can be achieved by declaring all variables in the class as private and writing public methods in the class to set and get the values of variables. This is also known as data field encapsulation.
+    </string>
+    <string name="encapsulation_cd4">
+        &#8226; To prevent direct modification of data fields, data should be declared private (restrict access to within the class).\n\n
+        &#8226; Getter and setter methods are used to read and modify private data fields\n\nExample: Getter and Setter Methods\n\n
+        public class Circle {\n\n
+        private double radius;\n\n
+        //Getter for radius\n
+        public double getRadius(){\n
+        return radius;\n
+        }\n\n
+        //Setter for radius\n
+        public void setRadius(double newRadius) {\n
+        radius = newRadius;\n
+        }
+    </string>
+    <string name="encapsulation_cd5">Java provides four visibility modifiers that control access to data and methods. This includes public, protected, default and private modifiers.\n\n
+        1. Public: accessible from any other classes \n\n
+        2. Private: accessible from only within its own class\n\n
+        3. Protected: accessible by any class in the same package or its subclasses\n\n
+        4. Default: if no visibility modifier is used, the default modifier is used which is accessible within its own class or a class within the same package\n
+    </string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    //Source: https://beginnersbook.com/2013/05/encapsulation-in-java/
+    //Source: https://beginnersbook.com/2013/03/oops-in-java-encapsulation-inheritance-polymorphism-abstraction/
+    //Source: http://www.cems.uwe.ac.uk/~jsa/UMLJavaShortCourse09/CGOutput/Unit6/unit6(0809)/page_06.htm
+    //Source: https://www.geeksforgeeks.org/encapsulation-in-java/
+
+</resources>

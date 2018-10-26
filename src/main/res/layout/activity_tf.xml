@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tfbg2"
+    tools:context=".TFActivity">
+
+    <TextView
+        android:id="@+id/scoreView"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mcQuestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="45dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="248dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/mcQuestion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/beans2" />
+
+    <TextView
+        android:id="@+id/TFQuestion"
+        android:layout_width="311dp"
+        android:layout_height="187dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="monospace"
+        android:text="TextView"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/TButton"
+        android:layout_width="114dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="True"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/FButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TFQuestion" />
+
+    <Button
+        android:id="@+id/FButton"
+        android:layout_width="114dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="False"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TFQuestion" />
+
+
+    <ImageButton
+        android:id="@+id/backBut"
+        android:layout_width="53dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:background="#373636"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_media_rew" />
+</android.support.constraint.ConstraintLayout>
